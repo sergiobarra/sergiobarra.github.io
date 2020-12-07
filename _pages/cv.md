@@ -17,7 +17,7 @@ PhD candidate in the Department of Information and Communication Technologies at
 
 Education
 ======
-* Ph.D. in [Wireless Networking](https://www.wnrg.upf.edu/home), January 2021.
+* Ph.D. in [Wireless Networking](https://www.upf.edu/web/wnrg/), January 2021.
   * Thesis title: "Responsive Spectrum Management for Wireless Local Area Networks: from Heuristic-based Policies to Model-Free Reinforcement Learning"
   * Advisor: [Boris Bellalta, Ph.D.](http://www.dtic.upf.edu/~bbellalt/)
 * M.S. in [Intelligent and Interactive Systems](https://www.upf.edu/web/iis), [Universitat Pompeu Fabra](http://www.upf.edu), 2016.
