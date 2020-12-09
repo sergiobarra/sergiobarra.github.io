@@ -17,12 +17,12 @@ PhD candidate in the Department of Information and Communication Technologies at
 
 Education
 ======
-* **PhD** in [Wireless Networking](https://www.upf.edu/web/wnrg/), January 2021.
+* **PhD in [Wireless Networking](https://www.upf.edu/web/wnrg/)**, January 2021.
   * Thesis title: "Responsive Spectrum Management for Wireless Local Area Networks: from Heuristic-based Policies to Model-Free Reinforcement Learning"
   * Research stay at the [Rice Networks Group](http://networks.rice.edu/) (Rice University), Houston (United States)
-* **MSc** in [Intelligent and Interactive Systems](https://www.upf.edu/web/iis), [Universitat Pompeu Fabra](http://www.upf.edu), 2016.
+* **MSc in [Intelligent and Interactive Systems](https://www.upf.edu/web/iis)**, [Universitat Pompeu Fabra](http://www.upf.edu), 2016.
   * Master's thesis topic: Energy saving approaches for enhancing Wireless Sensor Networks' lifetime.
-* **BSc** in [Telematics Engineering](https://www.upf.edu/web/graus/grau-enginyeria-xarxes-telecomunicacio), [Universitat Pompeu Fabra](http://www.upf.edu), 2015. 
+* **BSc in [Telematics Engineering](https://www.upf.edu/web/graus/grau-enginyeria-xarxes-telecomunicacio)**, [Universitat Pompeu Fabra](http://www.upf.edu), 2015. 
   * 10+ subjects passed with honors.
 
 Experience
@@ -31,7 +31,7 @@ Experience
   * [Wireless Networking Research Group (WNRG)](https://www.wnrg.upf.edu/home), [Universitat Pompeu Fabra](http://www.upf.edu), Spain (Barcelona)
 * Feb 2015 to Aug 2015 - **Software development engineer (internship)**
   * [Ricoh Spain](https://www.ricoh.es/index.html), Sant Cugat (Spain)
-* Jun 2014 to Oct 2014 - ** Quality Assurance (internship)**
+* Jun 2014 to Oct 2014 - **Quality Assurance (internship)**
   * [Vendo Services](https://www.vendoservices.com/), Barcelona (Spain)
   
 Refereed Journal Publications
