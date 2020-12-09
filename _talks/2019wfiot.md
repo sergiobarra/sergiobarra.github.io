@@ -8,8 +8,7 @@ date: 2019-04-15
 location: "Limerick, Ireland"
 ---
 
-**Abstract:** 
-Presentation of paper entitled "Towards Energy Efficient LPWANs through Learning-based Multi-hop Routing", available [here](https://arxiv.org/abs/1803.11010).
+Presentation of the paper entitled "Towards Energy Efficient LPWANs through Learning-based Multi-hop Routing", available [here](https://arxiv.org/abs/1803.11010).
 
 The full program of the venue is available [here](https://wfiot2019.iot.ieee.org/).
 
