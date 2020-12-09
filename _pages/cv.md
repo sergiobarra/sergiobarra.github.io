@@ -34,7 +34,7 @@ Experience
 * Jun 2014 to Oct 2014 - **Quality Assurance (internship)**
   * [Vendo Services](https://www.vendoservices.com/), Barcelona (Spain)
   
-Refereed Journal Publications
+Refereed Publications
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}

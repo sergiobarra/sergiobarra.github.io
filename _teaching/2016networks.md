@@ -1,5 +1,5 @@
 ---
-title: "Teaching Assistant: Networks"
+title: "Teaching Assistant: Networks (2016-2020)"
 collection: teaching assistant
 type: "Undergraduate course"
 permalink: /teaching/networks-upf
