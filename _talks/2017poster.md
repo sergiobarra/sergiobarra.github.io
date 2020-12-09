@@ -1,5 +1,5 @@
 ---
-title: "Enhancing Wireless Networks Performance through Learning-based Dynamic Spectrum Access"
+title: "Poster: Enhancing Wireless Networks Performance through Learning-based Dynamic Spectrum Access"
 collection: poster
 type: "Poster"
 permalink: /talks/2017poster

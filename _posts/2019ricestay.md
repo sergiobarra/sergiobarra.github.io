@@ -1,7 +1,7 @@
 ---
 title: 'Research stay at Rice University 2018-19'
 date: 2019-03-20
-permalink: /posts/2019/2019ricestay/
+permalink: /posts/2019ricestay/
 tags:
   - research stay
   - Rice University

@@ -1,5 +1,5 @@
 ---
-title: "Performance Analysis of Dynamic Channel Bonding in Spatially Distributed High Density WLANs"
+title: "Poster: Performance Analysis of Dynamic Channel Bonding in Spatially Distributed High Density WLANs"
 collection: poster
 type: "Poster"
 permalink: /talks/2018poster
