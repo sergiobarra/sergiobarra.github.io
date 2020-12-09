@@ -4,7 +4,7 @@ collection: Dissemination
 type: "Dissemination"
 permalink: /talks/2019riceseminar
 venue: "Research stay at the Rice Networks Group (Rice University)"
-date: 2018-11-12
+date: 2019-02-25
 location: "Houston, United States"
 ---
 
