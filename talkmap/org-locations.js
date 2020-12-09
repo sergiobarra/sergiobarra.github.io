@@ -13,5 +13,25 @@ var addressPoints = [
     "Florence, Italy",
     43.800593, 
     11.245139
+  ],
+  [
+    "Houston, United States",
+    29.720340,
+	-95.398627
+  ],
+  [
+    "Granada, Spain",
+    37.166097,
+	-3.598385
+  ],
+  [
+    "Helsinki, Finland",
+    60.186662, 
+	24.827590
+  ],
+  [
+    "Limerick, Ireland",
+    52.673396, 
+	-8.573226
   ]
 ];

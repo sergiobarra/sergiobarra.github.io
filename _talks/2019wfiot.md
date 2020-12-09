@@ -12,4 +12,6 @@ Presentation of the paper entitled "Towards Energy Efficient LPWANs through Lear
 
 The full program of the venue is available [here](https://wfiot2019.iot.ieee.org/).
 
+Find the slides [here](https://github.com/sergiobarra/data_repos/blob/master/presentations/2019-04-wfiot.pdf)
+
 ![Image in WFIoT](https://sergiobarra.github.io/images/2019wfioit.jpg)

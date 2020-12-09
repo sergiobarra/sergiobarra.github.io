@@ -28,7 +28,7 @@ Education
 Experience
 ======
 * Sep 2015 to Jan 2021 - **Research and teaching assistant**
-  * [Wireless Networking Research Group (WNRG)](https://www.wnrg.upf.edu/home), [Universitat Pompeu Fabra](http://www.upf.edu), Spain (Barcelona)
+  * [Wireless Networking Research Group (WNRG)](https://www.upf.edu/web/wnrg/), [Universitat Pompeu Fabra](http://www.upf.edu), Spain (Barcelona)
 * Feb 2015 to Aug 2015 - **Software development engineer (internship)**
   * [Ricoh Spain](https://www.ricoh.es/index.html), Sant Cugat (Spain)
 * Jun 2014 to Oct 2014 - **Quality Assurance (internship)**
