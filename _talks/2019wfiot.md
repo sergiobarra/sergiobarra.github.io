@@ -13,4 +13,4 @@ Presentation of paper entitled "Towards Energy Efficient LPWANs through Learning
 
 The full program of the venue is available [here](https://wfiot2019.iot.ieee.org/).
 
-![Image in WFIoT](https://sergiobarra.github.io/images/2019wfioit)
+![Image in WFIoT](https://sergiobarra.github.io/images/2019wfioit.jpg)
