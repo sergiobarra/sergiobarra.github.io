@@ -2,7 +2,7 @@
 title: "ENTOMATIC: bioacoustic identification of the olive fruit fly"
 collection: project
 type: "Research"
-permalink: /projects/2018entomatic
+permalink: /projects/2015entomatic-1
 date: 2015-09-01
 ---
 
