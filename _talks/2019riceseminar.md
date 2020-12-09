@@ -2,7 +2,7 @@
 title: "Research seminar at the Rice Network Group (#2)"
 collection: Dissemination
 type: "Dissemination"
-permalink: /talks/2018riceseminar
+permalink: /talks/2019riceseminar
 venue: "Research stay at the Rice Networks Group (Rice University)"
 date: 2018-11-12
 location: "Houston, United States"
