@@ -33,5 +33,14 @@ var addressPoints = [
     "Limerick, Ireland",
     52.673396, 
 	-8.573226
+  ],
+  [
+    "Heraklion, Greece",
+    35.340349,
+	25.137677
   ]
 ];
+
+
+
+
