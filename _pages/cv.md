@@ -13,7 +13,9 @@ Short Bio
 ======
 PhD candidate in the Department of Information and Communication Technologies at Universitat Pompeu Fabra, Barcelona, Spain. I received my BSc Degree in Telematics Engineering and MSc in Intelligent Interactive Systems in 2015 and 2016, respectively, both from Universitat Pompeu Fabra. I joined the Wireless Networking Research Group in 2015, where I work under the supervision of Dr. Boris Bellalta. I am a recipient of a FI grant from the Generalitat de Catalunya. My research mainly focuses on developing autonomous learning techniques for improving next-generation wireless networks through efficient spectrum access. 
 
-*Find my academic CV [here](https://github.com/sergiobarra/data_repos/blob/master/files/barrachina_academic_cv.pdf).
+*Find my academic CV [here](https://github.com/sergiobarra/sergiobarra.github.io/blob/master/files/barrachina_academic_cv.pdf).
+
+
 
 **Keywords**: Wi-Fi, IEEE 802.11ax, Machine Learning, Spectrum management, Reinforcement Learning, channel bondig, Wireless Networks
 
