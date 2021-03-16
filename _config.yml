@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Sergio Barrachina-Muñoz / Personal Website"
 title_separator          : "-"
 name                     : &name "Sergio Barrachina-Muñoz"
-description              : &description "PhD in Information and Communication Technologies (2021)"
+description              : &description "Ph.D. in Information and Communication Technologies (2021)"
 url                      : https://sergiobarra.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "sergiobarra/sergiobarra.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Sergio Barrachina-Muñoz"
   avatar           : "profile.png"
-  bio              : "PhD candiate on Wireless Networking"
+  bio              : "Postdoctoral Researcher in CTTC"
   location         : "Barcelona, Spain"
   employer         :
   pubmed           : 
