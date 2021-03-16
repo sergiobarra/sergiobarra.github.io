@@ -24,11 +24,11 @@ Sergio is currently working as a postdoctoral researcher in the Smartech departm
 Experience
 ======
 * Mar 2021 to currently - **Postdoctoral researcher**
-  * [Smartech department at Centre Tecnològic de Telecomunicacions de Catalunya (CTTC)](http://technologies.cttc.es/smartech/), Barcelona, Spain (Barcelona)
+  * [Smartech department at Centre Tecnològic de Telecomunicacions de Catalunya (CTTC)](http://technologies.cttc.es/smartech/), Castelldefels (Spain)
 * Jan 2021 to Mar 2021 - **QA engineer, Wi-Fi expert**
-  * [Centum solutions](https://www.centum.com), Barcelona, Spain (Barcelona)
+  * [Centum solutions](https://www.centum.com), Barcelona (Spain)
 * Sep 2015 to Jan 2021 - **Research and teaching assistant**
-  * [Wireless Networking Research Group (WNRG)](https://www.upf.edu/web/wnrg/), [Universitat Pompeu Fabra](http://www.upf.edu), Spain (Barcelona)
+  * [Wireless Networking Research Group (WNRG)](https://www.upf.edu/web/wnrg/), [Universitat Pompeu Fabra](http://www.upf.edu), Barcelona (Spain)
 * Feb 2015 to Aug 2015 - **Software development engineer (internship)**
   * [Ricoh Spain](https://www.ricoh.es/index.html), Sant Cugat (Spain)
 * Jun 2014 to Oct 2014 - **Quality Assurance (internship)**
