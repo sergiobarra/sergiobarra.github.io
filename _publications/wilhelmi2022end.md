@@ -3,7 +3,7 @@ title: "End-to-End Latency Analysis and Optimal Block Size of Proof-of-Work Bloc
 collection: publications
 permalink: /publication/wilhelmi2022end
 excerpt: 
-date: 2022
+date: 2022-02-01
 venue: 'arxiv'
 paperurl: 'https://arxiv.org/pdf/2202.01497.pdf'
 citation: 'Wilhelmi, F., Barrachina-Muñoz, S., & Dini, P. (2022). End-to-End Latency Analysis and Optimal Block Size of Proof-of-Work Blockchain Applications. <i>arXiv preprint arXiv:2202.01497</i>.
