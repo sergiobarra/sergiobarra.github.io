@@ -21,7 +21,7 @@ author_profile: true
       For the best experience viewing my publications with live citations, metrics, and full abstracts, 
       please visit my Google Scholar profile directly.
     </p>
-    <a href="{{author.googlescholar}}" target="_blank" 
+    <a href="https://scholar.google.es/citations?user=bsDDtYYAAAAJ&hl=es&oi=sra" target="_blank" 
        style="display: inline-block; background-color: #4285f4; color: white; padding: 12px 24px; 
               text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px;
               box-shadow: 0 2px 4px rgba(66, 133, 244, 0.3); transition: all 0.2s;">
@@ -60,13 +60,13 @@ author_profile: true
   <div style="padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px; text-align: center;">
     <h4>📖 Google Scholar</h4>
     <p>Complete profile with citations and metrics</p>
-    <a href="{{author.googlescholar}}" target="_blank" style="color: #4285f4;">View Profile</a>
+    <a href="https://scholar.google.es/citations?user=bsDDtYYAAAAJ&hl=es&oi=sra" target="_blank" style="color: #4285f4;">View Profile</a>
   </div>
   
   <div style="padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px; text-align: center;">
     <h4>🔬 ResearchGate</h4>
     <p>Professional network and collaboration</p>
-    <a href="{{author.researchgate}}" target="_blank" style="color: #00cc88;">View Profile</a>
+    <a href="https://www.researchgate.net/profile/Sergio_Barrachina-Munoz" target="_blank" style="color: #00cc88;">View Profile</a>
   </div>
   
   <div style="padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px; text-align: center;">
