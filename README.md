@@ -1,31 +1,132 @@
-A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
+# Sergio Barrachina-Muñoz - Personal Academic Website
 
-I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
+Welcome to my personal academic website showcasing my research in wireless networking, machine learning, and 5G/6G technologies.
 
-### Note: if you are using this repo and now get a notification about a security vulnerability, delete the Gemfile.lock file. 
+🌐 **Live Website**: [https://sergiobarra.github.io](https://sergiobarra.github.io)
 
-# Instructions
+## 👨‍🔬 About Me
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+I am a **Senior Researcher and Technical Lead at CTTC (Centre Tecnològic de Telecomunicacions de Catalunya)** in Barcelona, Spain, specializing in the design, deployment, and management of next-generation telecom infrastructures powered by AI. I combine strong research experience (Ph.D., 50+ publications) with hands-on expertise in cloud-native systems, 5G/6G networks, and datacenter automation.
 
-See more info at https://academicpages.github.io/
+**Key Expertise:**
+- AI-Powered Telecom Infrastructure & Next-Generation Networks
+- Cloud-Native Systems & Datacenter Automation
+- 5G/6G Network Design & Deployment
+- MLOps & DevOps for Intelligent Systems
+- Multi-Agent Frameworks for Autonomous Management
+- Large-Scale Testbed Development & Project Leadership
 
-## To run locally (not on GitHub Pages, to serve on your own computer)
+## 📚 Research Highlights
 
-1. Clone the repository and made updates as detailed above
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle clean` to clean up the directory (no need to run `--force`)
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `bundle exec jekyll liveserve` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+- **52+ Publications** in top-tier venues (IEEE, Elsevier, ACM)
+- **967+ Citations** with an **h-index of 18**
+- **PhD in Information and Communication Technologies** (2021)
+- **LAB leader** in 10+ European projects
 
-# Changelog -- bugfixes and enhancements
+## 🔗 Key Profiles
 
-There is one logistical issue with a ready-to-fork template theme like academic pages that makes it a little tricky to get bug fixes and updates to the core theme. If you fork this repository, customize it, then pull again, you'll probably get merge conflicts. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch. 
+- **Google Scholar**: [View Publications](https://scholar.google.es/citations?user=bsDDtYYAAAAJ&hl=es&oi=sra)
+- **ResearchGate**: [Professional Network](https://www.researchgate.net/profile/Sergio_Barrachina-Munoz)
+- **LinkedIn**: [Connect with me](https://www.linkedin.com/in/sergiobarrachina/)
+- **GitHub**: [Code & Projects](https://github.com/sergiobarra)
 
-To support this, all changes to the underlying code appear as a closed issue with the tag 'code change' -- get the list [here](https://github.com/academicpages/academicpages.github.io/issues?q=is%3Aclosed%20is%3Aissue%20label%3A%22code%20change%22%20). Each issue thread includes a comment linking to the single commit or a diff across multiple commits, so those with forked repositories can easily identify what they need to patch.
+## 🛠️ Website Features
+
+This website is built with **Jekyll** and deployed on **GitHub Pages**, featuring:
+
+- **📖 Publications**: Live integration with Google Scholar profile
+- **🎤 Talks**: Conference presentations and invited talks
+- **📚 Teaching**: Course materials and academic activities
+- **💼 Projects**: Research projects and collaborations
+- **📄 CV**: Downloadable academic curriculum vitae
+
+## 🚀 Local Development
+
+To run this website locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/sergiobarra/sergiobarra.github.io.git
+cd sergiobarra.github.io
+
+# Install dependencies
+bundle install
+
+# Serve locally
+bundle exec jekyll serve
+```
+
+The website will be available at `https://sergiobarra.github.io/`
+
+## 📊 Automated Publication Management
+
+This website includes automated tools for managing publications:
+
+- **`update_publications.py`**: Fetch publications from Google Scholar
+- **`update_stats.py`**: Update publication statistics
+- **`scholar_fetcher.py`**: Advanced Google Scholar integration
+
+```bash
+# Update publication statistics
+python update_stats.py
+
+# Fetch new publications (requires CSV export from Google Scholar)
+python update_publications.py
+```
+
+## 🏗️ Website Structure
+
+```
+├── _pages/           # Main website pages
+├── _publications/    # Publication markdown files
+├── _talks/          # Conference talks and presentations
+├── _teaching/       # Teaching materials
+├── _projects/       # Research projects
+├── _data/           # Website configuration
+├── images/          # Photos and graphics
+└── assets/          # CSS, JS, and other assets
+```
+
+## 📝 Content Management
+
+### Adding New Publications
+1. Export your publications from Google Scholar as CSV
+2. Run `python update_publications.py` to generate markdown files
+3. Or manually create files in `_publications/` following the existing format
+
+### Updating Statistics
+```bash
+# Edit update_stats.py with current numbers
+python update_stats.py
+```
+
+### Adding New Talks
+Create new markdown files in `_talks/` with the following front matter:
+```yaml
+---
+title: "Your Talk Title"
+venue: "Conference Name"
+date: "2024-01-01"
+location: "City, Country"
+---
+```
+
+## 🔧 Technical Details
+
+- **Framework**: Jekyll (Static Site Generator)
+- **Theme**: AcademicPages (fork of Minimal Mistakes)
+- **Hosting**: GitHub Pages
+- **Deployment**: Automatic via GitHub Actions
+- **Analytics**: Google Analytics integration
+
+## 📄 License
+
+This website template is based on [AcademicPages](https://github.com/academicpages/academicpages.github.io) and [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/), both released under the MIT License.
+
+## 📧 Contact
+
+- **Email**: barrachina.sergio@gmail.com
+
+---
+
+*Last updated: October 2025*
