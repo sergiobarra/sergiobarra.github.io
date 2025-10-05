@@ -69,6 +69,21 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:barrachina.sergio@gmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/sergiobarrachina/"
+    - label: "Google Scholar"
+      icon: "fas fa-graduation-cap"
+      url: "https://scholar.google.es/citations?user=bsDDtYYAAAAJ&hl=es&oi=sra"
+    - label: "ResearchGate"
+      icon: "fab fa-researchgate"
+      url: "https://www.researchgate.net/profile/Sergio_Barrachina-Munoz"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/sergiobarra"
 
 
 # Analytics
@@ -82,7 +97,7 @@ analytics:
 author:
   name             : "Sergio Barrachina-Muñoz"
   avatar           : "profile.png"
-  bio              : "Postdoctoral Researcher in CTTC"
+  bio              : "Senior Researcher and Technical Lead at CTTC"
   location         : "Barcelona, Spain"
   employer         :
   pubmed           : 
