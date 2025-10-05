@@ -14,20 +14,22 @@ author_profile: true
 <div style="margin: 20px 0; border: 1px solid #ddd; border-radius: 8px; padding: 20px; background-color: #f9f9f9;">
   <h3 style="margin-top: 0; color: #333;">📚 Live Publications from Google Scholar</h3>
   
-  <!-- Google Scholar Embed -->
-  <iframe src="https://scholar.google.com/citations?user=bsDDtYYAAAAJ&hl=es&oi=sra&view_op=list_works&sortby=pubdate" 
-          width="100%" 
-          height="700" 
-          frameborder="0" 
-          scrolling="yes"
-          style="border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-    <p>Your browser does not support iframes. Please visit <a href="{{author.googlescholar}}" target="_blank">my Google Scholar profile</a> directly.</p>
-  </iframe>
-  
-  <div style="margin-top: 15px; text-align: center;">
-    <a href="{{author.googlescholar}}" target="_blank" style="color: #4285f4; text-decoration: none;">
-      🔗 Open in Google Scholar →
+  <div style="text-align: center; padding: 40px 20px; background-color: #fff; border-radius: 8px; border: 2px dashed #4285f4;">
+    <div style="font-size: 48px; margin-bottom: 20px;">📖</div>
+    <h4 style="color: #333; margin-bottom: 15px;">View My Complete Publication Profile</h4>
+    <p style="color: #666; margin-bottom: 25px; line-height: 1.6;">
+      For the best experience viewing my publications with live citations, metrics, and full abstracts, 
+      please visit my Google Scholar profile directly.
+    </p>
+    <a href="{{author.googlescholar}}" target="_blank" 
+       style="display: inline-block; background-color: #4285f4; color: white; padding: 12px 24px; 
+              text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px;
+              box-shadow: 0 2px 4px rgba(66, 133, 244, 0.3); transition: all 0.2s;">
+      🔗 Open Google Scholar Profile
     </a>
+    <p style="color: #888; font-size: 14px; margin-top: 15px;">
+      Opens in a new tab • Always up-to-date • Full citation metrics
+    </p>
   </div>
 </div>
 
@@ -37,15 +39,15 @@ author_profile: true
 
 <div style="display: flex; justify-content: space-around; margin: 20px 0; padding: 20px; background-color: #f8f9fa; border-radius: 8px; text-align: center;">
   <div>
-    <div style="font-size: 24px; font-weight: bold; color: #4285f4;">52+</div>
+    <div style="font-size: 24px; font-weight: bold; color: #4285f4;">52</div>
     <div style="color: #666;">Publications</div>
   </div>
   <div>
-    <div style="font-size: 24px; font-weight: bold; color: #34a853;">1000+</div>
+    <div style="font-size: 24px; font-weight: bold; color: #34a853;">967</div>
     <div style="color: #666;">Citations</div>
   </div>
   <div>
-    <div style="font-size: 24px; font-weight: bold; color: #ea4335;">15+</div>
+    <div style="font-size: 24px; font-weight: bold; color: #ea4335;">18</div>
     <div style="color: #666;">h-index</div>
   </div>
 </div>
