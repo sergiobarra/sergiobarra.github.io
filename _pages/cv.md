@@ -55,8 +55,8 @@ redirect_from:
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 20px 0;">
   <div style="padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px; text-align: center;">
     <h4>🎓 Education</h4>
-    <p><strong>PhD in ICT</strong><br>Universitat Pompeu Fabra (2021)</p>
-    <p><strong>MSc & BSc</strong><br>Telematics Engineering</p>
+    <p><strong>PhD in ICT/AI</strong><br>Universitat Pompeu Fabra (2021)</p>
+    <p><strong>MSc & BSc</strong><br>Telematics Engineering and AI</p>
   </div>
   
   <div style="padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px; text-align: center;">

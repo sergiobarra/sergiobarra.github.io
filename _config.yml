@@ -14,6 +14,10 @@ description              : &description "Ph.D. in Information and Communication 
 url                      : https://sergiobarra.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "sergiobarra/sergiobarra.github.io"
+
+# Favicon settings
+favicon                  : "/images/favicon.ico"
+apple_touch_icon         : "/images/apple-touch-icon.png"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
