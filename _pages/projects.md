@@ -18,18 +18,22 @@ permalink: /projects/
 
 ### [WACA: Wi-Fi All-Channel Analyzer](https://github.com/sergiobarra/WACA_WiFiAnalyzer)
 <span style="display: inline-block; background-color: #e1ecf4; color: #0366d6; padding: 2px 8px; border-radius: 12px; font-size: 12px; font-weight: 500; margin-right: 8px;">MATLAB</span>
+
 *WACA is a platform built with WARP v3 boards that simultaneously allows capturing all the WiFi's 20-MHz channels at the 2.4 or 5-GHz band. That is, any data sample measured at time t contains the RSSI detected in each of the WiFi channels: 14 (for the 2.4 GHz band) and 24 (for the 5 GHz band) allowed by the IEEE 802.11 channelization. From the bunch of benefits of WACA, we highlight: simplicity of experimental procedure (from deployment to post-processing), dedicated radio frequency (RF) chain per channel (easing hardware failure detection), and easiness of adaptation/configuration empowered by the WARPLAb framework.*
 
 ### [Komondor IEEE 802.11ax wireless network simulator](https://github.com/wn-upf/Komondor)
 <span style="display: inline-block; background-color: #f1e8ff; color: #8b5cf6; padding: 2px 8px; border-radius: 12px; font-size: 12px; font-weight: 500; margin-right: 8px;">C++</span>
+
 *Komondor is a wireless network simulator that includes novel mechanisms for next-generation WLANs, such as dynamic channel bonding or enhanced spatial reuse. One of the main purposes of Komondor is to simulate the behavior of IEEE 802.11ax-2019 networks, an amendment designed to boost spectral efficiency in dense deployments.*
 
 ### [Spatial-Flexible Continuous Time Markov Network (SFCTM) framework](https://github.com/sergiobarra/SFCTMN)
 <span style="display: inline-block; background-color: #e1ecf4; color: #0366d6; padding: 2px 8px; border-radius: 12px; font-size: 12px; font-weight: 500; margin-right: 8px;">MATLAB</span>
+
 *Continuous Time Markov Network (CTMN) based framework for analyzing Wireless Local Area Networks (WLANs) implementing Dynamic Channel Bonding (DCB) policies in spatially distributed scenarios, where WLANs are not required to be within the carrier sense range of each other. Details on the framework can be found at S. Barrachina-Muñoz, F. Wilhelmi, and B. Bellalta. Performance of Dynamic Channel Bonding in Spatially Distributed High Density WLANs. arXiv preprint arXiv:1801.00594, 2018.*
 
 ### [Distance-Ring Exponential STA Generator (DRESG)](https://github.com/sergiobarra/DRESG_lpwan)
 <span style="display: inline-block; background-color: #e1ecf4; color: #0366d6; padding: 2px 8px; border-radius: 12px; font-size: 12px; font-weight: 500; margin-right: 8px;">MATLAB</span>
+
 *The Distance-Ring Exponential Stations Generator (DRESG) allows analyzing the impact on LPWANs energy consumption of multi-hop communication in the uplink. By letting STAs to transmit data packets in lower power levels and higher data rates to closer parent STAs, they normally reduce their energy consumption consequently.*
 
 </div>
@@ -40,7 +44,9 @@ permalink: /projects/
 
 <div style="margin: 20px 0;">
 
+<p style="margin-bottom: 20px; color: #666; font-style: italic;">
 For brevity, only a summary list of projects is provided below. Detailed information, including objectives and contributions, can be found through the embedded links.
+</p>
 
 - [**5G-HUB**](https://5g-hub.eu/) - Fifth Generation Services HUB for European Union Governmental Satellite Communications *(2024 -- 2027)*
 - [**5G-GOVSATCOM**](https://5g-govsatcom.eu/) *(2024 -- 2026)*
