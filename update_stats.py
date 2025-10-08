@@ -12,6 +12,7 @@ import re
 import os
 import sys
 import argparse
+import concurrent.futures
 from datetime import datetime
 
 try:
@@ -31,6 +32,7 @@ def fetch_scholar_stats(scholar_id: str):
         return None
 
     try:
+        print(f"[fetch] Starting scholar fetch for ID={scholar_id}")
         search_query = scholarly.search_author_id(scholar_id)
         author = scholarly.fill(search_query)
 
@@ -38,37 +40,54 @@ def fetch_scholar_stats(scholar_id: str):
         total_citations = int(author.get('citedby', 0) or 0)
         h_index = int(author.get('hindex', 0) or 0)
 
+        print(f"[fetch] Success: pubs={publications_count}, citations={total_citations}, h={h_index}")
         return publications_count, total_citations, h_index
     except Exception:
+        print("[fetch] Error during scholar fetch; will fallback if possible")
         return None
 
+
+def fetch_scholar_stats_with_timeout(scholar_id: str, timeout_seconds: int = 45):
+    """Run fetch_scholar_stats with a hard timeout to avoid hanging in CI."""
+    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+        future = executor.submit(fetch_scholar_stats, scholar_id)
+        try:
+            return future.result(timeout=timeout_seconds)
+        except concurrent.futures.TimeoutError:
+            print(f"[fetch] Timeout after {timeout_seconds}s; using fallback values")
+            return None
+
 def update_publication_stats(publications_file="_pages/publications.md", 
-                           publications=52, citations=967, h_index=18):
+                           publications=52, citations=967, h_index=18, verbose=False):
     """Update publication statistics in the publications page."""
     
     try:
         # Read the current file
+        if verbose:
+            print(f"[update] Opening file: {publications_file}")
         with open(publications_file, 'r', encoding='utf-8') as f:
             content = f.read()
         
         # Update statistics
-        content = re.sub(
+        content, repl_count_pubs = re.subn(
             r'<div style="font-size: 24px; font-weight: bold; color: #4285f4;">\d+</div>',
             f'<div style="font-size: 24px; font-weight: bold; color: #4285f4;">{publications}</div>',
             content
         )
         
-        content = re.sub(
+        content, repl_count_cit = re.subn(
             r'<div style="font-size: 24px; font-weight: bold; color: #34a853;">\d+</div>',
             f'<div style="font-size: 24px; font-weight: bold; color: #34a853;">{citations}</div>',
             content
         )
         
-        content = re.sub(
+        content, repl_count_h = re.subn(
             r'<div style="font-size: 24px; font-weight: bold; color: #ea4335;">\d+</div>',
             f'<div style="font-size: 24px; font-weight: bold; color: #ea4335;">{h_index}</div>',
             content
         )
+        if verbose:
+            print(f"[update] Replacements -> pubs:{repl_count_pubs} cit:{repl_count_cit} h:{repl_count_h}")
         
         # Write the updated content
         with open(publications_file, 'w', encoding='utf-8') as f:
@@ -91,6 +110,7 @@ def parse_args(argv=None):
     parser.add_argument("--citations", type=int, default=None, help="Manual override: total citations")
     parser.add_argument("--h-index", type=int, default=None, help="Manual override: h-index")
     parser.add_argument("--no-fetch", action="store_true", help="Disable scholarly fetching and use provided/manual values")
+    parser.add_argument("--verbose", action="store_true", help="Enable verbose debug logs")
     return parser.parse_args(argv)
 
 
@@ -108,8 +128,8 @@ def main(argv=None):
     fetched = None
     if not args.no_fetch:
         if SCHOLARLY_AVAILABLE:
-            print("Attempting to fetch stats from Google Scholar…")
-            fetched = fetch_scholar_stats(args.scholar_id)
+            print("Attempting to fetch stats from Google Scholar… (timeout 45s)")
+            fetched = fetch_scholar_stats_with_timeout(args.scholar_id, timeout_seconds=45)
             if fetched is None:
                 print("Warning: Could not fetch stats automatically. Falling back to provided/manual values.")
         else:
@@ -136,7 +156,8 @@ def main(argv=None):
         publications_file=args.publications_file,
         publications=publications,
         citations=citations,
-        h_index=h_index
+        h_index=h_index,
+        verbose=args.verbose
     )
 
     print()
