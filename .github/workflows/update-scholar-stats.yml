@@ -28,9 +28,8 @@ jobs:
           pip install scholarly
 
       - name: Run update script
-        working-directory: ./
         run: |
-          python sergiobarra.github.io/update_stats.py --scholar-id bsDDtYYAAAAJ
+          python update_stats.py --scholar-id bsDDtYYAAAAJ
 
       - name: Commit and push changes (if any)
         run: |
