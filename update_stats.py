@@ -78,43 +78,91 @@ def fetch_scholar_stats_serpapi(scholar_id: str, api_key: str):
     
     try:
         print(f"[serpapi] Starting SerpAPI fetch for ID={scholar_id}")
-        
-        # SerpAPI Google Scholar Profiles endpoint
-        url = "https://serpapi.com/search"
+
+        # SerpAPI Google Scholar Author endpoint: use author_id (not profiles search)
+        url = "https://serpapi.com/search.json"
         params = {
-            "engine": "google_scholar_profiles",
-            "mauthors": scholar_id,
-            "api_key": api_key
+            "engine": "google_scholar_author",
+            "author_id": scholar_id,
+            "api_key": api_key,
+            "hl": "en"
         }
-        
-        response = requests.get(url, params=params, timeout=30)
-        response.raise_for_status()
-        
-        data = response.json()
-        
-        # Extract stats from SerpAPI response
-        profiles = data.get("profiles", [])
-        if not profiles:
-            print("[serpapi] No profiles found in response")
+
+        response = requests.get(url, params=params, timeout=20)
+        if response.status_code != 200:
+            try:
+                payload = response.json()
+                error_msg = payload.get("error") or payload.get("message") or "HTTP error"
+            except Exception:
+                error_msg = "HTTP error"
+            print(f"[serpapi] HTTP {response.status_code}: {error_msg}")
             return None
-            
-        profile = profiles[0]  # Take first profile
-        
-        publications_count = len(profile.get("publications", []))
-        total_citations = int(profile.get("cited_by", {}).get("all", 0))
-        h_index = int(profile.get("cited_by", {}).get("h_index", 0))
-        
+
+        data = response.json()
+
+        # Extract stats per SerpAPI docs
+        # Publications: prefer author.articles_count (total publications)
+        author_obj = data.get("author", {}) or {}
+        publications_count = int(author_obj.get("articles_count", 0) or 0)
+        if not publications_count:
+            # Fallback: count all articles via pagination
+            articles = data.get("articles", []) or []
+            publications_count = len(articles)
+            try:
+                pagination = data.get("serpapi_pagination", {}) or {}
+                next_url = pagination.get("next")
+                pages_fetched = 0
+                while next_url and pages_fetched < 10:  # safety cap
+                    # Ensure api_key is present (avoid leaking in logs)
+                    if "api_key=" not in next_url:
+                        sep = '&' if '?' in next_url else '?'
+                        next_url = f"{next_url}{sep}api_key=REDACTED"
+                        # Use real key in request, not in logged URL
+                        req_url = next_url.replace("api_key=REDACTED", f"api_key={api_key}")
+                    else:
+                        req_url = next_url
+                    page_resp = requests.get(req_url, timeout=20)
+                    if page_resp.status_code != 200:
+                        break
+                    page_data = page_resp.json()
+                    publications_count += len(page_data.get("articles", []) or [])
+                    pagination = page_data.get("serpapi_pagination", {}) or {}
+                    next_url = pagination.get("next")
+                    pages_fetched += 1
+            except Exception:
+                # If pagination fails, keep current count
+                pass
+
+        # Citations and h-index from cited_by.table rows
+        cited_by = data.get("cited_by", {}) or {}
+        table = cited_by.get("table", []) or []
+        total_citations = 0
+        h_index = 0
+        if isinstance(table, list):
+            if len(table) > 0 and isinstance(table[0], dict):
+                total_citations = int((((table[0].get("citations", {}) or {}).get("all", 0)) or 0))
+            if len(table) > 1 and isinstance(table[1], dict):
+                h_index = int((((table[1].get("h_index", {}) or {}).get("all", 0)) or 0))
+        if not total_citations:
+            total_citations = int(((cited_by.get("citations", {}) or {}).get("all", 0)) or 0)
+        if not h_index:
+            h_index = int(((cited_by.get("h_index", {}) or {}).get("all", 0)) or 0)
+
         print(f"[serpapi] Success: pubs={publications_count}, citations={total_citations}, h={h_index}")
         return publications_count, total_citations, h_index
-        
+
+    except requests.RequestException as e:
+        # Avoid printing full URL with key
+        print(f"[serpapi] Request error: {str(e)}")
+        return None
     except Exception as e:
         print(f"[serpapi] Error during SerpAPI fetch: {e}")
         return None
 
 
 def fetch_scholar_stats_with_fallback(scholar_id: str, serpapi_key: str = None, timeout_seconds: int = 45):
-    """Try scholarly first, then SerpAPI as fallback."""
-    
+    """Try scholarly first, then SerpAPI as fallback (to save SerpAPI credits)."""
+
     # Try scholarly first
     if SCHOLARLY_AVAILABLE:
         print("Attempting to fetch stats from Google Scholar via scholarly…")
@@ -122,7 +170,7 @@ def fetch_scholar_stats_with_fallback(scholar_id: str, serpapi_key: str = None, 
         if result is not None:
             return result
         print("scholarly failed, trying SerpAPI fallback…")
-    
+
     # Try SerpAPI fallback
     if serpapi_key and REQUESTS_AVAILABLE:
         print("Attempting to fetch stats from Google Scholar via SerpAPI…")
@@ -130,7 +178,7 @@ def fetch_scholar_stats_with_fallback(scholar_id: str, serpapi_key: str = None, 
         if result is not None:
             return result
         print("SerpAPI also failed")
-    
+
     return None
 
 def update_publication_stats(publications_file="_pages/publications.md", 
