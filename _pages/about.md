@@ -19,3 +19,7 @@ Technically, I specialize in multi-domain testbeds combining 5G/6G, Wi-Fi, satel
 With over 50 peer-reviewed publications (h-index 18), I combine strong research expertise with hands-on leadership in infrastructure design and AI-driven management, turning ideas into sustainable, high-impact operational systems.
 
 Outside work, I enjoy literature, guitar, and chess; activities that balance creativity and analytical thinking, and often inspire my approach to problem-solving.
+
+## Research Focus Areas
+
+![Word cloud of research keywords]({{ '/images/wordcloud.png' | relative_url }})
