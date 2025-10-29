@@ -14,7 +14,7 @@ redirect_from:
   
   <!-- PDF Embed -->
   <div style="text-align: center; margin: 20px 0;">
-    <iframe src="{{ '/files/barrachina_cv.pdf' | relative_url }}#toolbar=1&navpanes=1&scrollbar=1" 
+    <iframe src="{{ '/files/barrachina_cv.pdf' | relative_url }}#toolbar=1&navpanes=0&scrollbar=1" 
             width="100%" 
             height="800px" 
             frameborder="0" 
