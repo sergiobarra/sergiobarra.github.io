@@ -38,16 +38,17 @@ The Distance-Ring Exponential Stations Generator (DRESG) allows analyzing the im
 
 *For brevity, only a summary list of projects is provided below. Detailed information, including objectives and contributions, can be found through the embedded links.*
 
-- **[5G-HUB](https://5g-hub.eu/)** - Fifth Generation Services HUB for European Union Governmental Satellite Communications *(2024 -- 2027)*
-- **[5G-GOVSATCOM](https://5g-govsatcom.eu/)** *(2024 -- 2026)*
-- **[Plaza6G+](https://www.plaza6g.eu/)** - Polo de Innovación y Experimentación 6G Extendido *(2023 -- 2025)*
-- **[Plaza6G](https://www.plaza6g.eu/)** - Polo de Innovación y Experimentación 6G *(2022 -- 2025)*
-- **[6G-BLUR](https://6g-blur.cttc.es/)** - The blurring RAN *(2021 -- 2024)*
+- **[Plaza6G+](https://www.plaza6g.eu/)** - Polo de Innovación y Experimentación 6G Extendido *(2023 -- 2026)* ⭐ **Principal Investigator** (PI)
+
+- **[5G-HUB](https://5g-hub.eu/)** - Fifth Generation Services HUB for European Union Governmental Satellite Communications *(2024 -- 2027)* 🔧 **_Technical Lead_**
+- **[5G-GOVSATCOM](https://5g-govsatcom.eu/)** *(2024 -- 2026)* 🔧 **_Technical Lead_**
+- **[Plaza6G](https://www.plaza6g.eu/)** - Polo de Innovación y Experimentación 6G *(2022 -- 2025)* 🔧 **_Technical Lead_**
+- **[6G-BLUR](https://6g-blur.cttc.es/)** - The blurring RAN *(2021 -- 2024)* 🔧 **_Technical Lead_**
 - **[5GMediaHUB](https://www.5gmediahub.eu/)** - 5G Experimentation Environment for 3rd Party Media *(2021 -- 2024)*
-- **[5G-EPICENTRE](https://www.5gepicentre.eu/)** - 5G ExPerimentation Infrastructure hosting Cloud-nativE Network applications for public proTection and disaster RElief 5G *(2021 -- 2024)*
-- **[MARSAL](https://www.marsalproject.eu/)** - Machine Learning-Based, Networking and Computing Infrastructure Resource Management of 5G and Beyond Intelligent Networks *(2021 -- 2023)*
-- **[MonB5G](https://www.monb5g.eu/)** - Distributed management of Network Slices in beyond 5G *(2019 -- 2023)*
-- **WINDMAL** - ML for wireless networking in highly dynamic scenarios *(2020)*
-- **Cisco** - Performance Evaluation of IEEE 802.11ax WLANs *(2017 -- 2020)*
-- **Maria de Maeztu (MdM)** - [Wireless Networking through Learning](https://www.upf.edu/web/mdm-dtic/projects/-/asset_publisher/Ef1was9TxNY4/content/id/6177174#.W0b83NUzapo) *(2017 -- 2020)*
+- **[5G-EPICENTRE](https://www.5gepicentre.eu/)** - 5G ExPerimentation Infrastructure hosting Cloud-nativE Network applications for public proTection and disaster RElief 5G *(2021 -- 2024)* 🔧 **_Technical Lead_**
+- **[MARSAL](https://www.marsalproject.eu/)** - Machine Learning-Based, Networking and Computing Infrastructure Resource Management of 5G and Beyond Intelligent Networks *(2021 -- 2023)* 🔧 **_Technical Lead_**
+- **[MonB5G](https://www.monb5g.eu/)** - Distributed management of Network Slices in beyond 5G *(2019 -- 2023)* 🔧 **_Technical Lead_**
+- **WINDMAL** - ML for wireless networking in highly dynamic scenarios *(2020)* 
+- **Cisco** - Performance Evaluation of IEEE 802.11ax WLANs *(2017 -- 2020)* 
+- **Maria de Maeztu (MdM)** - [Wireless Networking through Learning](https://www.upf.edu/web/mdm-dtic/projects/-/asset_publisher/Ef1was9TxNY4/content/id/6177174#.W0b83NUzapo) *(2017 -- 2020)* 
 - **ENTOMATIC** - [Novel automatic and stand-alone integrated pest management tool for remote count and bioacoustic identification of the Olive Fly (Bactrocera oleae) in the field](https://www.upf.edu/web/entomatic/) *(2015 -- 2018)*
