@@ -29,22 +29,9 @@ redirect_from:
        target="_blank" 
        style="display: inline-block; background-color: #4285f4; color: white; padding: 12px 24px; 
               text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px;
-              box-shadow: 0 2px 4px rgba(66, 133, 244, 0.3); transition: all 0.2s; margin-right: 10px;">
+              box-shadow: 0 2px 4px rgba(66, 133, 244, 0.3); transition: all 0.2s;">
       📥 Download Professional CV
     </a>
-    
-    <a href="{{ '/files/barrachina_academic_cv.pdf' | relative_url }}" 
-       target="_blank" 
-       style="display: inline-block; background-color: #34a853; color: white; padding: 12px 24px; 
-              text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px;
-              box-shadow: 0 2px 4px rgba(52, 168, 83, 0.3); transition: all 0.2s;">
-      🎓 Download Academic CV
-    </a>
-    
-    <p style="color: #888; font-size: 14px; margin-top: 15px;">
-      <strong>Professional CV</strong> - Industry-focused version | 
-      <strong>Academic CV</strong> - Research-focused version with publications
-    </p>
   </div>
 </div>
 
