@@ -226,9 +226,42 @@ def update_publication_stats(publications_file="_pages/publications.md",
     except Exception as e:
         print(f"❌ Error updating statistics: {e}")
 
+def update_about_h_index(about_file="_pages/about.md", h_index=18, verbose=False):
+    """Update h-index value in the about page."""
+    
+    try:
+        # Read the current file
+        if verbose:
+            print(f"[update] Opening file: {about_file}")
+        with open(about_file, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Update h-index in the text pattern: (h-index \d+)
+        content, repl_count = re.subn(
+            r'\(h-index \d+\)',
+            f'(h-index {h_index})',
+            content
+        )
+        
+        if verbose:
+            print(f"[update] Replacements -> h-index:{repl_count}")
+        
+        # Write the updated content
+        with open(about_file, 'w', encoding='utf-8') as f:
+            f.write(content)
+        
+        if repl_count > 0:
+            print(f"✅ h-index updated in about page: {h_index}")
+        else:
+            print(f"⚠️  No h-index pattern found in about page (expected pattern: 'h-index XX')")
+        
+    except Exception as e:
+        print(f"❌ Error updating h-index in about page: {e}")
+
 def parse_args(argv=None):
     parser = argparse.ArgumentParser(description="Update publication statistics on the publications page.")
     parser.add_argument("--publications-file", default="_pages/publications.md", help="Path to publications page file")
+    parser.add_argument("--about-file", default="_pages/about.md", help="Path to about page file")
     parser.add_argument("--scholar-id", default="bsDDtYYAAAAJ", help="Google Scholar user ID")
     parser.add_argument("--publications", type=int, default=None, help="Manual override: publications count")
     parser.add_argument("--citations", type=int, default=None, help="Manual override: total citations")
@@ -286,6 +319,12 @@ def main(argv=None):
         publications_file=args.publications_file,
         publications=publications,
         citations=citations,
+        h_index=h_index,
+        verbose=args.verbose
+    )
+
+    update_about_h_index(
+        about_file=args.about_file,
         h_index=h_index,
         verbose=args.verbose
     )
