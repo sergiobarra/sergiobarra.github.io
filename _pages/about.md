@@ -16,7 +16,7 @@ Over the past three years, I have led CTTC’s laboratory operations, managing a
 
 Technically, I specialize in multi-domain testbeds combining 5G/6G, Wi-Fi, satellite, and IP networking. I deploy and orchestrate cloud-native components using OpenStack, Kubernetes, and Docker, integrating 5G cores such as Open5GS, Free5GC, and OpenAirInterface. My DevOps and MLOps practices leverage CI/CD pipelines, GPU-accelerated AI workloads, and observability stacks built on Prometheus and Grafana. I also leverage multi-agent frameworks and retrieval-augmented generation (RAG) for chat-based operations, enabling the LAB team to monitor, control, and optimize complex systems through natural human language.
 
-With over 50 peer-reviewed publications (h-index 20), I combine strong research expertise with hands-on leadership in infrastructure design and AI-driven management, turning ideas into sustainable, high-impact operational systems.
+With over 50 peer-reviewed publications (h-index 21), I combine strong research expertise with hands-on leadership in infrastructure design and AI-driven management, turning ideas into sustainable, high-impact operational systems.
 
 Outside work, I enjoy literature, guitar, and chess; activities that balance creativity and analytical thinking, and often inspire my approach to problem-solving.
 
