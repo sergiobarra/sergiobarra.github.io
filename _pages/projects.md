@@ -38,7 +38,7 @@ The Distance-Ring Exponential Stations Generator (DRESG) allows analyzing the im
 
 *For brevity, only a summary list of projects is provided below. Detailed information, including objectives and contributions, can be found through the embedded links.*
 
-- **[Plaza6G/Plaza6G+](https://www.plaza6g.eu/)** - Polo de Innovación y Experimentación 6G Extendido *(2023 -- 2026)* ⭐ **Principal Investigator** (PI)
+- **[Plaza6G+](https://www.plaza6g.eu/)** - Polo de Innovación y Experimentación 6G Extendido *(2023 -- 2026)* ⭐ **Principal Investigator** (PI)
 
 - **[UNITY-6G](https://unity-6g.eu/)** - UNified archITecture for Open RAN enabled Distributed Scalable and SustainabilitY enhanced 6G Networks *(2025 -- 2027)* 🔧 **_Technical Lead_**
 - **[5G-HUB](https://5g-hub.eu/)** - Fifth Generation Services HUB for European Union Governmental Satellite Communications *(2024 -- 2027)* 🔧 **_Technical Lead_**
