@@ -39,11 +39,11 @@ author_profile: true
 
 <div style="display: flex; justify-content: space-around; margin: 20px 0; padding: 20px; background-color: #f8f9fa; border-radius: 8px; text-align: center;">
   <div>
-    <div style="font-size: 24px; font-weight: bold; color: #4285f4;">55</div>
+    <div style="font-size: 24px; font-weight: bold; color: #4285f4;">20</div>
     <div style="color: #666;">Publications</div>
   </div>
   <div>
-    <div style="font-size: 24px; font-weight: bold; color: #34a853;">1140</div>
+    <div style="font-size: 24px; font-weight: bold; color: #34a853;">1141</div>
     <div style="color: #666;">Citations</div>
   </div>
   <div>
