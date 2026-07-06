@@ -43,11 +43,11 @@ author_profile: true
     <div style="color: #666;">Publications</div>
   </div>
   <div>
-    <div style="font-size: 24px; font-weight: bold; color: #34a853;">1198</div>
+    <div style="font-size: 24px; font-weight: bold; color: #34a853;">1204</div>
     <div style="color: #666;">Citations</div>
   </div>
   <div>
-    <div style="font-size: 24px; font-weight: bold; color: #ea4335;">22</div>
+    <div style="font-size: 24px; font-weight: bold; color: #ea4335;">23</div>
     <div style="color: #666;">h-index</div>
   </div>
 </div>
