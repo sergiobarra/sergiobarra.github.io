@@ -43,7 +43,7 @@ author_profile: true
     <div style="color: #666;">Publications</div>
   </div>
   <div>
-    <div style="font-size: 24px; font-weight: bold; color: #34a853;">1268</div>
+    <div style="font-size: 24px; font-weight: bold; color: #34a853;">1270</div>
     <div style="color: #666;">Citations</div>
   </div>
   <div>
